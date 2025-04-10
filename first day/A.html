@@ -1,17 +1,25 @@
 <!DOCTYPE html>
-<head>
-  <title>Simple JS Example</title>
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enhanced Button Click</title>
+    <script>
+      function showMessage() {
+        // Alert
+        alert("Hello! You clicked the button!");
 
-<h2>Click the button to see a message:</h2>
-<button onclick="showMessage()">Click Me</button>
+        // Additional functionality: Change background color
+        document.body.style.backgroundColor = "lightblue";
 
-<script>
-  function showMessage() {
-    alert("Hello! You clicked the button!");
-  }
-</script>
+        // Log a message to the console
+        console.log("Button was clicked!");
 
-</body>
+        // You can add more functionality as needed
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="showMessage()">Click me</button>
+  </body>
 </html>
